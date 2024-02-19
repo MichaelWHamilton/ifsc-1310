@@ -1,0 +1,35 @@
+/* ---- CSS Demo ---- */
+
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+}
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+}
+
+
+
+/* ----- Global Styles ----- */
+        /* fonts.google.com find a find to use*/
+
+body{
+    background-color: turquoise;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Merriweather", serif;
+}
+
+/* --- Generate a color scheme for the document --- */
+/* color.adobe.com */
+header.primary{
+    background-color: red;
+
+}
