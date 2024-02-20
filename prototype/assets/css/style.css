@@ -5,3 +5,16 @@ body{
 .notableAlumni{
     font-weight: bold;
 }
+
+span.hr-line {
+    display: block;
+    width: 100%; /* Set the desired width */
+    border-top: 1px solid #ccc; /* Customize the line color */
+}
+table,th,td{
+    border: 1px solid black;
+    
+}
+caption#diversityTable{
+    font-weight: bold;
+}
