@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>IFSC 1310 | Michael Hamilton</title>
-        <meta name="description" content="Prototype Assignment - IFSC 1310 - Spring 2024">
-        <meta name="author" content="Michael Hamilton">
-        <link href="assets/css/style.css" rel="stylesheet"/>
+<html lang="en"><!--represents root of an html document, contains all other html elements, except <!doctype>-->
+    <head> <!--for metadata, title, scripts, styles. These are not displayed on the page -->
+        <meta charset="utf-8"> <!--specifies character encoding for the document-->
+        <title>IFSC 1310 | Michael Hamilton</title> <!--title of the document, will show in the tab-->
+        <meta name="description" content="Prototype Assignment - IFSC 1310 - Spring 2024"><!--meta tag for information about the document-->
+        <meta name="author" content="Michael Hamilton"><!--meta tag to provide information about the document-->
+        <link href="assets/css/style.css" rel="stylesheet"/><!--link tag to link the css stylesheet to the html document-->
     </head>
 
-    <body>
-        <main>
-            <header>
+    <body> <!--Actual content displayed in the document-->
+        <main> <!--main content of the document-->
+            <header> <!--Intro content to the document, holds the main header-->
                 <h1 id="top">University of Arkansas at Little Rock: A Brief History</h1>
             </header>
-            <section id="content">
+
+            <section id="content"> <!--a section of a document, helps split up, organize and structure the document-->
                 
-                <p>The University of Arkansas at Little Rock (UA Little Rock) is a public research university 
+                <p> <!--tag represents a paragraph-->
+                    The University of Arkansas at Little Rock (UA Little Rock) is a public research university 
                     in Little Rock, Arkansas. Established as Little Rock Junior College by the Little Rock School District in 1927, the 
                     institution became a private four-year university under the name Little Rock University in 1957. 
                     It returned to public status in 1969 when it merged with the University of Arkansas System under its present name. 
                     The former campus of Little Rock Junior College is now (2019) the campus of Philander Smith University.
                 </p>
                 
-                <figure>
+                <figure> <!--tag used to mark up a photo in a document-->
                     <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UALR logo"/>
-                    <figcaption id="imgCaption">UALR Logo</figcaption>
+                    <figcaption id="imgCaption">UALR Logo</figcaption> <!--tag used to define a caption for the photo in <figure>-->
                 </figure>
 
                 <p>At 250 acres, the UA Little Rock campus encompasses more than 56 buildings, including the Center for 
@@ -34,10 +36,14 @@
                     University Television, and a campus-wide wireless network. It is classified among <em>"R2: Doctoral Universities – High research activity"</em>.
                 </p>
 
-                <h2>Student Life</h2>
-                <span class="hr-line"></span>
+                <h2>Student Life</h2><!--header tag-->
 
-                <p>The student life at UA Little Rock is typical of public universities in the United States. It is characterized by student-run organizations 
+                <span class="hr-line"></span> <!-- typically used to color a part of a text. In this case
+                I used it to create a line under a header instead of using <hr/>
+            below is an example of changing text color with <span>-->
+
+                <p>
+                    The <span style="color:blue">student life</span> at UA Little Rock is typical of public universities in the United States. It is characterized by student-run organizations 
                     and affiliation groups that support social, academic, athletic, and religious activities and interests. Some of the services offered by 
                     the UA Little Rock Office of Campus Life are intramural sports and fitness programs, diversity programs, leadership development, peer 
                     tutoring, student government association, student support programs including groups for non-traditional and first-generation students, 
@@ -46,15 +52,15 @@
                     available anywhere else in Arkansas
                 </p>
 
-                <h3>Academics</h3>
+                <h3>Academics</h3><!--header tag-->
 
                 <p>The university features more than 100 undergraduate degrees and 60 graduate degrees, including graduate certificates, master's degrees, 
                     and doctorates, through both traditional and online courses. Students attend classes in one of the university's three new colleges 
                     and a law school
                 </p>
 
-                <ul>
-                    <li>College of Business, Health, and Human Services</li>
+                <ul><!--unorder list-->
+                    <li>College of Business, Health, and Human Services</li><!--list item-->
                     <li>College of Humanities, Arts, Social Sciences, and Education</li>
                     <li>Donaghey College of Science, Technology, Engineering, and Mathematics</li>
                     <li>William H. Bowen School of Law</li>
@@ -62,10 +68,12 @@
                 
                 <p>Student body composition as of May 2, 2022:</p>
                 
-                <table >
-                    <caption id="diversityTable">Race and Ethnicity</caption>
-                    <tr>
-                        <td>White</td>
+                <table > <!--table to hold information-->
+                    <caption id="diversityTable">Race and Ethnicity</caption> <!--caption of table-->
+                    <tr> <!--table row-->
+                        <td>White</td> <!--<td> defines a data cell in an html table. This one is 
+                            regular and left-aligned by default. <th> is the other tag to define an html table cell
+                                <th> is bold and centered by default?-->
                         <td>48%</td>
                     </tr>
                     <tr>
@@ -100,7 +108,7 @@
                     student government association, student support programs including groups for non-traditional and first-generation students, a student-run 
                     newspaper, and fraternity and sorority life. The proximity of the UA Little Rock campus to downtown Little Rock enables students to take 
                     advantage of a wide array of recreational, entertainment, educational, internship, and employment opportunities that are not available anywhere 
-                    else in Arkansas.[20]
+                    else in Arkansas.
                 </p>             
 
                 <h3>Campus Living</h3>
@@ -140,9 +148,9 @@
                 
                 <span class="hr-line"></span>
 
-                <dl>
-                    <dt class="notableAlumni">Arts & Entertainment</dt>
-                    <dd>Julie Adams</dd>
+                <dl> <!--description list-->
+                    <dt class="notableAlumni">Arts & Entertainment</dt><!--defines terms/names-->
+                    <dd>Julie Adams</dd><!--describes each term/name-->
                     <dd>Mike Saunders</dd>
                     <dt class="notableAlumni">Athletics</dt>
                     <dd>Derek Fisher</dd>
@@ -155,12 +163,16 @@
                 <p> Frank Scott Jr. is one of the most locally recognized graduates from UALR. Scott is an American polition native to Arkansas. Scott graduated highschool in Little Rcok then earned his
                     bachelor's degree in business from the University of Memphis. After accomplishing this task, Scott returned to his hometown and earned his Master of Business 
                     Administration from the University of Arkasnas at Little Rock. 
-                    <blockquote>
-                        In the 2018 election, Scott ran for mayor of Little Rock.  In the November 6 nonpartisan election, he led a five-candidate field with 37.11% of the vote,
-                         falling short of the 40% required to avoid a runoff election. Scott and another candidate advanced to a December 4 runoff, where Scott decidingly won.
-                         <cite>Scott is the first elected African American mayor of Little Rock.</cite> He has since been reelected as mayor in 2022.
-                </blockquote>
-                After holding a successful first term as mayor of Little Rock, Scott was reelected for a second term in 2022.
+                    
+                    <blockquote><!--specifies a section that is quoted from another source
+                    Places text in a block, with indention-->
+                            In the 2018 election, Scott ran for mayor of Little Rock.  In the November 6 nonpartisan election, he led a five-candidate field with 37.11% of the vote,
+                            falling short of the 40% required to avoid a runoff election. Scott and another candidate advanced to a December 4 runoff, where Scott decidingly won.
+                            <em>Scott is the first elected African American mayor of Little Rock.</em> He has since been reelected as mayor in 2022.
+                            <!--place emphasis on a word or phrase, -->
+                    </blockquote>
+
+                    After holding a successful first term as mayor of Little Rock, Scott was reelected for a second term in 2022.
                 </p>
 
                 <h3>Collections and Archives</h3>
@@ -174,9 +186,10 @@
                 </dl>
             </section>
             
-            <nav>
-                <h4>Take Me Somewhere</h4>
+            <nav><!--defines a set of navigation links-->
+                <h4>Take Me Somewhere</h4><!--header tag-->
                 <ul>
+                    <!--<a>, anchor tag defines a hyperlink-->
                     <li><a href="index.html" title="home">Home</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/University_of_Arkansas_at_Little_Rock" title="ualr wikipedia">About</a></li>
                     <li><a href="https://ualr.edu" target="_blank" title="ualr">UALR</a></li>
@@ -184,7 +197,7 @@
                 </ul>
             </nav>
 
-            <footer>
+            <footer><!--defines a footer of the document OR section-->
                 <h6>© 2024 Michael Hamilton</h6>
                 <h6><a href="#top">Back to Top</a></h6>
             </footer>
