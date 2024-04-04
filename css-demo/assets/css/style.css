@@ -59,12 +59,18 @@ img{
     background-color:#5A5F66;
 }
 
+section#practice img:hover{
+    border-radius:0;
+    transition:.5s;
+    
+}
+
 /* --------------- Global Styles --------------- */
         /* fonts.google.com find a find to use*/
 
 body{
     /*
-    background-image: url("../img/rain.jpg");
+    background-image: url("..//rain.jpg");
     background-size:100%;
     */
     
@@ -243,6 +249,8 @@ border-bottom:1px dotted #6E8EBB;
 
 }
 
+
+
 /*-----Instertion starting point------*/
 
 
@@ -253,23 +261,25 @@ margin:20px 0;
 border-collapse:collapse;
 }
 
-caption{
+table caption{
+    font-size: 40px;
     font-weight:bold;
-    margin:10px;
+    margin:20px;
 }
 
 th{
     background-color:#2a323c;
     color:#fff;
     padding:7.5px;
+    
 }
 
 tr:nth-child(even){
-background-color: rgba(0,0,0,0.1);
+background-color: rgb(210, 102, 102);
 }
 
-td:nth-child(n+2){
-    text-align: right;
+td{
+    text-align: center;
 }
 /*
 td:not(:first-child){
@@ -287,7 +297,7 @@ padding:3px;
 
 #practice ol{
     list-style-type:upper-latin;
-   
+    
     list-style-position: outside;
 }
 
@@ -336,6 +346,23 @@ dd + dt{
     
 }
 
+section#practice h4{
+    text-align: center;
+    background-color: teal;
+    border-top: 10px solid rgb(0,94,94);
+    border-bottom: 10px solid rgb(1, 193, 193); 
+    border-right: 10px solid rgb(1, 193, 193); 
+    border-left:10px solid rgb(0, 94, 94); 
+    transition:1s;
+}
+
+section#practice h4:hover{
+    border-bottom: 10px solid rgb(0,94,94);
+    border-top: 10px solid rgb(1, 193, 193); 
+    border-left: 10px solid rgb(1, 193, 193); 
+    border-right:10px solid rgb(0, 94, 94); 
+    transition:1s;
+}
 aside[role="complementary"]{
     background-color:#2a323c;
     color: #ffffff;

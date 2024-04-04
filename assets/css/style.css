@@ -89,7 +89,7 @@ nav div a{
 }
 
 */
-
+/*
 section.primary ul{
 padding:0;
 display:flex;
@@ -127,8 +127,17 @@ section.primary nav a:hover{
     transition: 0.4s;
     
 }
+*/
 
-
+nav{
+    width:40ch;
+    
+    padding-top: 0px;
+    margin-top: 0;
+    background-color: #046407;
+    border-color: gold;
+    border-style:ridge;
+}
 @keyframes gradient{
     0%{
       background-position:0% 50%;
