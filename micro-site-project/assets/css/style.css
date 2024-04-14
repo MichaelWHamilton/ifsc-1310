@@ -1,0 +1,70 @@
+/* 
+Color Theme
+*/
+
+/* ---------Box Sizing ------*/
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* --Utility Styles --*/
+
+
+
+
+/* -- Responsive Images --*/
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/*Global Styles*/
+
+body{
+    margin:0;
+}
+
+/*--content--*/
+
+header.primary{
+    background-color: cyan;
+}
+
+header.primary h1{
+    text-align: center;
+}
+
+header.primary h2{
+    text-align:center;
+    color:white;
+    font-size: 36px;
+    text-shadow: 2px 2px 2px black;
+}
+header.primary nav{
+   background-color:yellow;
+}
+header.primary nav ul{
+    margin:auto;
+    padding:0;
+    display:flex;
+    flex-direction:row;
+    list-style: none;
+    justify-content:space-around;    
+}
+header.primary nav ul li{
+    
+    background-color:rgba(0,0,0,40%);
+    border-radius: 4px;
+}
+header.primary nav ul li:hover{
+    transition:.5s;
+    background-color:rgba(0,0,0,90%);
+}
+header.primary nav ul li a{
+    text-decoration:none;
+}
