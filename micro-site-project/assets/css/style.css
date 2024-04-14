@@ -27,20 +27,31 @@ img{
 
 body{
     margin:0;
+    
+    background-color:blue;
 }
 
 /*--content--*/
 
 header.primary{
     background-color: cyan;
+    text-align:center;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    padding:6em 2em;
+    position: relative;
 }
 
-h1.replace-logo{
+header .primary h1{
+    position:relative;
+    font-size: 3.5rem;
+}
+
+header.primary h1 a{
+    display:block;
     width:500px;
     height:60px;
-    padding:0;
-    margin:0;
-    
+    margin:0 auto;
     
     background:url("..//img/SpaceX-Logo.png");
     background-size: contain;
@@ -53,10 +64,7 @@ h1.replace-logo{
 }
 
 header.primary h2{
-    text-align:center;
-    color:white;
-    font-size: 36px;
-    text-shadow: 2px 2px 2px black;
+    
 }
 header.primary nav{
    background-color:yellow;
