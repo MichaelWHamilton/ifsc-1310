@@ -35,8 +35,21 @@ header.primary{
     background-color: cyan;
 }
 
-header.primary h1{
-    text-align: center;
+h1.replace-logo{
+    width:500px;
+    height:60px;
+    padding:0;
+    margin:0;
+    
+    
+    background:url("..//img/SpaceX-Logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    text-indent:100%;
+    text-wrap: nowrap;
+    overflow: hidden;
+
 }
 
 header.primary h2{
@@ -50,21 +63,21 @@ header.primary nav{
 }
 header.primary nav ul{
     margin:auto;
-    padding:0;
     display:flex;
     flex-direction:row;
-    list-style: none;
+    list-style-type: none;
     justify-content:space-around;    
 }
-header.primary nav ul li{
-    
-    background-color:rgba(0,0,0,40%);
-    border-radius: 4px;
+header.primary nav li{
+    background-color:red;
+    list-style-type: none;
+    padding:0;
+    width:20%;
 }
-header.primary nav ul li:hover{
-    transition:.5s;
-    background-color:rgba(0,0,0,90%);
-}
-header.primary nav ul li a{
+header.primary nav a:link, header.primary nav a:visited{
+    color:white;
     text-decoration:none;
+    background-color:#000000;
+    background-color:rgba(142,166,184,40%);
+
 }
