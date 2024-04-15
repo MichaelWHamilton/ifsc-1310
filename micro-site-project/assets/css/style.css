@@ -138,7 +138,7 @@ section#articles .container{
     border-bottom: 1px solid #c0c0c0;
     padding: 0 0 4em 0;
 }
-section#articles h2, #content h2{
+section#articles h2{
     flex: 0 0 100%;
     color: #33536b;
     text-align:center;
@@ -148,16 +148,36 @@ section#articles h2{
     color:white;
 }
 section#articles .post{
-    width:200px;
+    width:30%;
     background:rgb(239, 239, 239);
     border-radius: 20px;
     transition:.5s;
-    
+    box-shadow: 0 0px 4px 4px rgba(0, 0, 0, 0.4);
+    font-size: 0.8rem;
 }
 section#articles .post:hover{
-    width:200px;
+    width:30%;
     background:rgb(255, 255, 255);
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px white;
-    
+}
+
+#articles .post figure{
+    margin:0;
+    color:grey;
+    font-size:.75rem;
+}
+
+#articles .post a:link, #articles .post a:visited{
+    color:#3b638b;
+}
+
+#articles .post img{
+    border-radius: 10px;
+}
+#articles li{
+    margin-bottom:20px;
+}
+#articles ul{
+    padding: 0 20px;
 }
