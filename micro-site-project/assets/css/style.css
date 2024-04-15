@@ -14,7 +14,11 @@ html{
 
 /* --Utility Styles --*/
 
-
+.container{
+    width: 80vw;
+    margin:40px auto;
+    max-width:900px;
+}
 
 
 /* -- Responsive Images --*/
@@ -28,32 +32,44 @@ img{
 body{
     margin:0;
     
-    background-color:blue;
+    background-color:rgb(255, 255, 255);
 }
 
 /*--content--*/
 
 header.primary{
-    background-color: cyan;
+    background-color: #181c1f;
     text-align:center;
     color:white;
     text-shadow: 2px 2px 2px black;
     padding:6em 2em;
     position: relative;
 }
-
-header .primary h1{
-    position:relative;
-    font-size: 3.5rem;
+header.primary::before{
+    content: "";
+    background-image:url("..//img/dragon-in-space.jpg");
+    background-size:cover;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    opacity:40%;
 }
-
+header.primary h1{
+    position:relative;
+    font-size: 3rem;
+    margin: 20px 0;
+    
+    
+}
 header.primary h1 a{
+    color:#fff;
     display:block;
     width:500px;
     height:60px;
     margin:0 auto;
-    
-    background:url("..//img/SpaceX-Logo.png");
+    background-image:url("..//img/SpaceX-Logo.png");
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -62,22 +78,28 @@ header.primary h1 a{
     overflow: hidden;
 
 }
-
 header.primary h2{
-    
+    font-size: 2.6em;
+    /*top l/r bottom*/
+    margin: 20px auto 40px;
+    position:relative;
 }
 header.primary nav{
-   background-color:yellow;
+   
+   position:relative;
 }
 header.primary nav ul{
-    margin:auto;
+    position:relative;
     display:flex;
     flex-direction:row;
-    list-style-type: none;
-    justify-content:space-around;    
+    justify-content:space-around;
+    padding:0;
+    /*top/bottom right/left*/
+    margin:20px auto;
+    max-width:900px;
 }
 header.primary nav li{
-    background-color:red;
+    
     list-style-type: none;
     padding:0;
     width:20%;
@@ -87,5 +109,55 @@ header.primary nav a:link, header.primary nav a:visited{
     text-decoration:none;
     background-color:#000000;
     background-color:rgba(142,166,184,40%);
+    padding:8px 16px;
+    border-radius:10px;
+    transition:0.5s;
+    display:block;
+}
+header.primary nav a:hover, header.primary nav a:active{
+    background-color:rgba(51,83,107,0.8);
+}
 
+#content{
+    padding: 4em 0;
+}
+
+section#content h2{
+    font-size: 2.2em;
+    color:#33536b;
+    text-align:center;
+}
+section#articles{
+    background:#181c1f;
+}
+section#articles .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+}
+section#articles h2, #content h2{
+    flex: 0 0 100%;
+    color: #33536b;
+    text-align:center;
+    font-size:2em;
+}
+section#articles h2{
+    color:white;
+}
+section#articles .post{
+    width:200px;
+    background:rgb(239, 239, 239);
+    border-radius: 20px;
+    transition:.5s;
+    
+}
+section#articles .post:hover{
+    width:200px;
+    background:rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 2px white;
+    
 }
