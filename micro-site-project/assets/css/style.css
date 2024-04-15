@@ -20,6 +20,24 @@ html{
     max-width:900px;
 }
 
+.img-right{
+    float: right;
+    margin: 10px 0 10px 20px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+.img-left{
+    float: left;
+    margin: 10px 20px 10px 0;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+.img-center{
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
 
 /* -- Responsive Images --*/
 img{
@@ -149,6 +167,7 @@ section#articles h2{
 }
 section#articles .post{
     width:30%;
+    
     background:rgb(239, 239, 239);
     border-radius: 20px;
     transition:.5s;
@@ -161,11 +180,17 @@ section#articles .post:hover{
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px white;
 }
+#articles article.post h2{
+    font-size: 1.5em;
+}
 
+#articles article figcaption{
+    font-size: 0.8em;
+    color: #c0c0c0;
+    text-transform: uppercase;
+}
 #articles .post figure{
     margin:0;
-    color:grey;
-    font-size:.75rem;
 }
 
 #articles .post a:link, #articles .post a:visited{
@@ -173,11 +198,70 @@ section#articles .post:hover{
 }
 
 #articles .post img{
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 10px 10px 0px 10px;
+    height:auto;
+    max-height:175px;
 }
 #articles li{
     margin-bottom:20px;
 }
 #articles ul{
     padding: 0 20px;
+}
+
+#slideshow{
+    padding: 4em 0;
+}
+
+aside[role="complementary"]{
+    background-color: #181c1f;
+    color:#fff;
+    padding:2.5em;
+}
+aside .container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+aside article.widget{
+    width:40%;
+}
+.widget table{
+    font-size:0.8em;
+    border-collapse: collapse;
+}
+
+.widget table td{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+}
+.widget table td:nth-child(even){
+    text-align:right;
+}
+aside article a:link,
+aside article a:visited{
+    color:#fff;
+    display:block;
+    margin-top:1.2em;
+    letter-spacing:1.2px;
+}
+aside article a:hover, aside article a:active{
+    text-decoration:none;
+}
+aside article footer{
+    display:none;
+}
+
+footer#colophon h6{
+    margin:0;
+    padding:20px;
+    color:#fff;
+    background-color:#3b638b;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+#colophon h6 a:link, #colophon h6 a:visited{
+    color:#fff;
 }
