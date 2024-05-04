@@ -265,3 +265,21 @@ footer#colophon h6{
 #colophon h6 a:link, #colophon h6 a:visited{
     color:#fff;
 }
+
+
+/* ---------History----------- */
+table#history {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table#history td, table#history th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  table#history tr:nth-child(even) {
+    background-color: #dddddd;
+  }
