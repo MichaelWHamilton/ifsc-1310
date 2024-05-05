@@ -349,3 +349,7 @@ section#faq :last-child
 {
     border-bottom:solid 6px rgba(51,83,107,1);
 }
+section#faq :nth-child(2)
+{
+    border-top:solid 6px rgba(51,83,107,1);
+}
