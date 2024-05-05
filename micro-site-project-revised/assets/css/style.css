@@ -179,6 +179,7 @@ section#articles .post:hover{
     background:rgb(255, 255, 255);
     border-radius: 20px;
     box-shadow: 0px 0px 2px 2px white;
+    transform:scale(105%);
 }
 #articles article.post h2{
     font-size: 1.5em;
