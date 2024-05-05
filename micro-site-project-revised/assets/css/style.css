@@ -136,14 +136,15 @@ header.primary nav a:hover, header.primary nav a:active{
     background-color:rgba(51,83,107,0.8);
 }
 
-#content{
-    padding: 4em 0;
+section#content{
+    padding: 0;
 }
 
 section#content h2{
     font-size: 2.2em;
     color:#33536b;
     text-align:center;
+    padding-bottom: 10px;
 }
 section#articles{
     background:#181c1f;
@@ -272,8 +273,35 @@ footer#colophon h6{
     color:#fff;
 }
 
+footer div.email-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color:#3b638b;
+}
+
+footer div#email-icon img{
+    position:relative;
+    
+    padding-top:10px;
+    max-width: 40px;
+    max-height: 40px;
+}
+footer div#reddit-icon{
+    padding-top:10px;
+    max-width: 55px;
+    max-height: 55px;
+}
+
+
 
 /* ---------History----------- */
+
+section .history p:nth-of-type(2){
+    padding-bottom:20px;
+    border-bottom: solid 2px #c0c0c0;
+}
+
 table#history {
     font-family: arial, sans-serif;
     border-collapse: collapse;
